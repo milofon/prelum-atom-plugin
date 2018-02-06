@@ -1,7 +1,7 @@
 {
   "name": "prelum",
   "main": "./lib/prelum",
-  "version": "0.2.6",
+  "version": "0.2.7",
   "description": "Клиент для трансляции документов Prelum (временная безвозмездная beta-версия)",
   "keywords": [],
   "repository": "https://github.com/milofon/prelum-atom",
