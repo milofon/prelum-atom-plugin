@@ -23,16 +23,16 @@
 Добавление сведений о секретном ключе осуществляется в следующем порядке:
 1. Перейти в пункт меню _Atom > Config_ или _File > Config_;
 2. В группу prelum/apiKeys добавить параметр host и key следующим образом:
+<p align="left">
+  <img width="600px" src="https://github.com/milofon/prelum-atom/blob/master/docs/images/config_example.png">
+</p>
+
 
 ## Подготовка документа к публикации
 
 Перечень ресурсов для публикации документа указывается в блоке *документ* с помощью параметров _redmine-wiki_ или _redmine-issue_.
 
 Например:
-
-```
-документ(ГОСТ-19-106-78)
-redmine-wiki - http://redmine.prelum.ru/projects/test/wiki/about
-redmine-issue - http://redmine.prelum.ru/issues/1000
---
-```
+<p align="left">
+  <img width="600px" src="https://raw.githubusercontent.com/milofon/prelum-atom/master/docs/images/redmine_links.png">
+</p>
