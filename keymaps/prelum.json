@@ -1,0 +1,7 @@
+{
+  "atom-workspace": {
+	"ctrl-alt-t": "prelum:translate",
+    "ctrl-alt-l": "prelum:goToLineHtml",
+    "ctrl-alt-p": "prelum:redmine-publish"
+  }
+}

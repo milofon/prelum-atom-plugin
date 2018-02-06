@@ -1,0 +1,15 @@
+.DS_Store
+npm-debug.log
+node_modules
+*.pdf
+*.prelum
+*.pre
+*.html
+*.tex
+*.aux
+*.fdb_latexmk
+*.fls
+*.log
+*.gz
+*.synctex
+*.textile

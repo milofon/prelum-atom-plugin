@@ -1,0 +1,163 @@
+{
+    "keywords": {
+        ")": {
+            "params": [],
+            "description": "Перечисление нумерованное",
+            "symbol": true,
+            "snippet": ") ${1}"
+        },
+        "+": {
+            "params": [],
+            "description": "Раздел",
+            "symbol": true,
+            "snippet": "+ ${1}"
+        },
+        "++": {
+            "params": [],
+            "description": "Подраздел",
+            "symbol": true,
+            "snippet": "++ ${1}"
+        },
+        "-": {
+            "params": [],
+            "description": "Перечисление",
+            "symbol": true,
+            "snippet": "- ${1}"
+        },
+        "=": {
+            "params": [],
+            "description": "Пункт",
+            "symbol": true,
+            "snippet": "= ${1}"
+        },
+        "==": {
+            "params": [],
+            "description": "Подпункт",
+            "symbol": true,
+            "snippet": "== ${1}"
+        },
+        "=+": {
+            "params": [],
+            "description": "Пункт с заголовком",
+            "symbol": true,
+            "snippet": "=+ ${1}"
+        },
+        "==+": {
+            "params": [],
+            "description": "Подпункт с заголовком",
+            "symbol": true,
+            "snippet": "==+ ${1}"
+        },
+        "таблица": {
+            "params": [],
+            "description": "Таблица",
+            "snippet": "таблица(${1:табл-пример}) ${2:Сведения о примере}\n|+\n|%10,=. Шифр||%50,>. Наименование.||%40,>. Значение\n|-\n|ААА\n|Показатель 1\n|100\n|-\n|БББ\n|Показатель 2\n|200\n|-\n--"
+        },
+        "аннотация": {
+            "params": [],
+            "description": "Аннотация",
+            "snippet": "аннотация()\n\n${1}"
+        },
+        "документ": {
+            "params": [],
+            "paramsType": "import",
+            "snippet": "документ(${1})",
+            "description": "Спецификация документа"
+        },
+        "лист-регистрации-изменений": {
+            "params": [],
+            "description": "Лист регистрации изменений",
+            "snippet": "лист-регистрации-изменений()\n\n${1}"
+        },
+        "лист-утверждения": {
+            "params": [],
+            "description": "Лист утверждения",
+            "snippet": "лист-утверждения()\n\n${1}"
+        },
+        "листинг": {
+            "params": ["javascript", "html", "shell", "apl", "bash", "brainfuck", "c", "c#", "c++", "ceylon", "clojure", "clojurescript", "cmake", "cobol", "coffeescript", "common-lisp", "css", "cython", "d", "dart", "diff", "django", "dockerfile", "dylan", "ebnf", "ecl", "eiffel", "erb", "erlang", "factor", "fortran", "fsharp", "go", "groovy", "haml", "haskell", "haxe", "html", "http", "hxml", "idl", "ini", "jade", "java", "javascript", "json", "jsp", "julia", "kotlin", "latex", "literate-haskell", "livescript", "lua", "mathematica", "modelica", "mscgen", "mysql", "nesc", "nsis", "objective-c", "ocaml", "octave", "pascal", "perl", "php", "pig", "powershell", "properties", "protobuf", "puppet", "python", "rst", "ruby", "sass", "scala", "scheme", "scss", "slim", "smarty", "sql", "swift", "systemverilog", "tcl", "twig", "velocity", "verilog", "vhdl", "xml", "xquery", "yaml"],
+            "description": "Листинг",
+            "snippet": "листинг(${1})\n\n--"
+        },
+        "перечень-рисунков": {
+            "params": [],
+            "description": "Перечень рисунков",
+            "snippet": "перечень-рисунков()\n\n${1}"
+        },
+        "перечень-символов": {
+            "params": [],
+            "description": "Перечень символов",
+            "snippet": "перечень-символов()\n${1}\n--"
+        },
+        "перечень-сокращений": {
+            "params": [],
+            "description": "Перечень сокращений",
+            "snippet": "перечень-сокращений()\n${1}\n--"
+        },
+        "перечень-ссылочных-документов": {
+            "params": [],
+            "description": "Перечень ссылочных документов",
+            "snippet": "перечень-ссылочных-документов()\n\n${1}"
+        },
+        "перечень-таблиц": {
+            "params": [],
+            "description": "Перечень таблиц",
+            "snippet": "перечень-таблиц()\n\n${1}"
+        },
+        "перечень-терминов": {
+            "params": [],
+            "description": "Перечень терминов",
+            "snippet": "перечень-терминов()\n${1}\n--"
+        },
+        "предметный-указатель": {
+            "params": [],
+            "description": "Предметный указатель",
+            "snippet": "предметный-указатель()\n${1}\n--"
+        },
+        "приложение": {
+            "params": [],
+            "description": "Приложение",
+            "snippet": "приложение(${1}) ${2}"
+        },
+        "примечание": {
+            "params": [],
+            "description": "Примечание",
+            "snippet": "примечание(${1}) ${2}"
+        },
+        "примечания": {
+            "params": [],
+            "description": "Примечания",
+            "snippet": "примечания(${1})\n${2}\n--"
+        },
+        "рисунок": {
+            "params": [],
+            "description": "Рисунок (ссылка, формат)",
+            "snippet": "рисунок(${1}, ${2}) ${3}"
+        },
+        "сноска": {
+            "params": [],
+            "description": "Сноска",
+            "snippet": "сноска(${1}) ${2}"
+        },
+        "содержание": {
+            "params": [],
+            "description": "Содержание",
+            "snippet": "содержание()\n\n${1}"
+        },
+        "титульный-лист": {
+            "params": [],
+            "description": "Титульный лист",
+            "snippet": "титульный-лист(${1})\n${2}\n--"
+        },
+        "формула": {
+            "params": [],
+            "description": "Формула",
+            "snippet": "формула(${1}) ${2}"
+        },
+        "часть": {
+            "params": [],
+            "description": "Часть",
+            "snippet": "часть(${1}) ${2}"
+        }
+    }
+}

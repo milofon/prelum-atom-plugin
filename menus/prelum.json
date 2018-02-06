@@ -1,0 +1,75 @@
+{
+  "context-menu": {
+    "atom-text-editor": [
+      {
+        "label": "Prelum",
+        "submenu": [
+            {
+                "label": "Translate",
+                "command": "prelum:translate"
+            },
+            {
+                "label": "Redmine Publish",
+                "command": "prelum:redmine-publish"
+            },
+            {
+                "label": "Line in HTML",
+                "command": "prelum:goToLineHtml"
+            },
+            {
+                "label": "PDF",
+                "command": "prelum:PDF"
+            },
+            {
+                "label": "HTML",
+                "command": "prelum:HTML"
+            },
+            {
+                "label": "TEX",
+                "command": "prelum:TEX"
+            },
+            {
+                "label": "TEXTILE",
+                "command": "prelum:TEXTILE"
+            }
+        ]
+      }
+    ]
+  },
+  "menu": [
+    {
+      "label": "Packages",
+      "submenu": [
+        {
+          "label": "Prelum",
+          "submenu": [
+            {
+              "label": "Translate",
+              "command": "prelum:translate"
+            },
+            {
+              "label": "Line in HTML",
+              "command": "prelum:goToLineHtml"
+            },
+            {
+              "label": "PDF",
+              "command": "prelum:PDF"
+            },
+            {
+              "label": "HTML",
+              "command": "prelum:HTML"
+            },
+            {
+              "label": "TEX",
+              "command": "prelum:TEX"
+            },
+            {
+              "label": "TEXTILE",
+              "command": "prelum:TEXTILE"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
