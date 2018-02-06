@@ -24,9 +24,8 @@
 1. Перейти в пункт меню _Atom > Config_ или _File > Config_;
 2. В группу prelum/apiKeys добавить параметр host и key следующим образом:
 <p align="left">
-  <img width="600px" src="https://github.com/milofon/prelum-atom/blob/master/docs/images/config_example.png">
+  <img width="600px" src="https://raw.githubusercontent.com/milofon/prelum-atom/master/docs/images/config_example.png">
 </p>
-
 
 ## Подготовка документа к публикации
 
