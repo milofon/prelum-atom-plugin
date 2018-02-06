@@ -1,0 +1,63 @@
+@import "./vars";
+
+.pre-listing {
+    color: @listing-text;
+
+    .token {
+
+        &.comment,
+        &.prolog,
+        &.doctype,
+        &.cdata {
+            color: @token-comment;
+        }
+
+        &.punctuation {
+            color: @token-punctuation;
+        }
+
+        &.property,
+        &.tag,
+        &.boolean,
+        &.number,
+        &.constant,
+        &.symbol,
+        &.deleted {
+            color: @token-constant;
+        }
+
+        &.selector,
+        &.attr-name,
+        &.string,
+        &.char,
+        &.builtin,
+        &.inserted {
+            color: @token-string;
+        }
+
+
+        &.operator,
+        &.entity,
+        &.url,
+        .language-css &.string,
+        .style &.string {
+            color: @token-operator;
+        }
+
+        &.atrule,
+        &.attr-value,
+        &.keyword {
+            color: @token-keyword;
+        }
+
+        &.function {
+            color: @token-function;
+        }
+
+        &.regex,
+        &.important,
+        &.variable {
+            color: @token-variable;
+        }
+    }
+}
