@@ -181,8 +181,21 @@
             }
         }
 
-        &-list {
+        &-formula {
 
+            &__entry {
+                margin: @margin 0;
+                position: relative;
+                text-align: center;
+
+                &:after {
+                    content: "(" attr(data-number) ")";
+                    line-height: @text-indent;
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                }
+            }
         }
 
         &-key {

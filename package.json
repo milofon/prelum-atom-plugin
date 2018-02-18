@@ -12,7 +12,8 @@
   "dependencies": {
     "atom-package-dependencies": "latest",
     "jquery": "latest",
-    "msgpack-lite": "latest"
+    "msgpack-lite": "latest",
+    "mathjax-node": "^2.0.1"
   },
   "package-dependencies": {
     "pdf-view": ""
