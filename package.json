@@ -1,7 +1,7 @@
 {
   "name": "prelum",
   "main": "./lib/prelum",
-  "version": "0.2.6",
+  "version": "0.3.0",
   "description": "Клиент для трансляции документов Prelum (временная безвозмездная beta-версия)",
   "keywords": [],
   "repository": "https://github.com/milofon/prelum-atom",
@@ -12,8 +12,11 @@
   "dependencies": {
     "atom-package-dependencies": "latest",
     "jquery": "latest",
-    "msgpack-lite": "latest",
-    "mathjax-node": "^2.0.1"
+    "jsdom": "^13.0.0",
+    "mathjax": "2.7.2",
+    "mathjax-electron": "^3.0.0",
+    "mathjax-node": "2.0.0",
+    "msgpack-lite": "latest"
   },
   "package-dependencies": {
     "pdf-view": ""
