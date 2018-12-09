@@ -3,7 +3,9 @@
   "main": "./lib/prelum",
   "version": "0.3.0",
   "description": "Клиент для трансляции документов Prelum (временная безвозмездная beta-версия)",
-  "keywords": [],
+  "keywords": [
+    "prelum"
+  ],
   "repository": "https://github.com/milofon/prelum-atom",
   "license": "BSD-3-Clause",
   "engines": {
