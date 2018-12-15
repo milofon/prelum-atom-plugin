@@ -1,50 +1,56 @@
 {
-    "host": {
-        "title": "Адрес",
-        "type": "string",
-        "default": "prelum.ru",
-        "description": "Адрес транслятора Prelum",
-        "order": 10
-    },
-    "port": {
-        "title": "Порт",
-        "type": "string",
-        "default": "1961",
-        "description": "Порт подключения к транслятору Prelum",
-        "order": 20
-    },
-    "useSsl" : {
-        "title": "Использовать защищенное соединение",
-        "type": "boolean",
-        "default": true,
-        "order": 30
-    },
-    "format": {
-        "title": "Формат выходного файла",
-        "type": "string",
-        "default": "pdf",
-        "enum": ["textile", "tex", "pdf", "html"],
-        "description": "Используется по умолчанию при вызове трансляции без указания выходного формата",
-        "order": 40
-    },
-    "autoTranslate": {
-        "title": "Автоматические транслировать документ при сохранении",
-        "type": "boolean",
-        "default": true,
-        "order": 50
-    },
-    "imagePath": {
-        "title": "Каталог изображений",
-        "type": "string",
-        "default": "img",
-        "description": "При использовании изображений в документах prelum, транслятору будут переданы файлы из данного каталога. Путь к каталогу указывается относительно директории расположения файла prelum.",
-        "order": 60
-    },
-    "showHtmlMargin" : {
-        "title": "Отображать отступы документа на панели просмотра HTML",
-        "type": "boolean",
-        "default": true,
-        "description": "Отображение отступов 2см слева и 1см справа. Изменения вступят в силу после очередной трансляции.",
-        "order": 80
-    }
+  "host": {
+    "title": "Адрес",
+    "type": "string",
+    "default": "prelum.ru",
+    "description": "Адрес транслятора Prelum",
+    "order": 10
+  },
+  "port": {
+    "title": "Порт",
+    "type": "string",
+    "default": "1961",
+    "description": "Порт подключения к транслятору Prelum",
+    "order": 20
+  },
+  "useSsl": {
+    "title": "Использовать защищенное соединение",
+    "type": "boolean",
+    "default": true,
+    "order": 30
+  },
+  "format": {
+    "title": "Формат выходного файла",
+    "type": "string",
+    "default": "pdf",
+    "enum": ["textile", "tex", "pdf", "html"],
+    "description": "Используется по умолчанию при вызове трансляции без указания выходного формата",
+    "order": 40
+  },
+  "autoTranslate": {
+    "title": "Автоматические транслировать документ при сохранении",
+    "type": "boolean",
+    "default": true,
+    "order": 50
+  },
+  "imagePath": {
+    "title": "Каталог изображений",
+    "type": "string",
+    "default": "img",
+    "description": "При использовании изображений в документах prelum, транслятору будут переданы файлы из данного каталога. Путь к каталогу указывается относительно директории расположения файла prelum.",
+    "order": 60
+  },
+  "showHtmlMargin": {
+    "title": "Отображать отступы документа на панели просмотра HTML",
+    "type": "boolean",
+    "default": true,
+    "description": "Отображение отступов 2см слева и 1см справа. Изменения вступят в силу после очередной трансляции.",
+    "order": 80
+  },
+  "publicatorUrl": {
+    "title": "Адрес публикатора",
+    "type": "string",
+    "default": "http://pub.prelum.ru",
+    "order": 45
+  }
 }
