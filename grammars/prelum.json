@@ -1,338 +1,338 @@
 {
-	"scopeName": "source.prelum",
-	"fileTypes": [ "prelum", "pre" ],
-	"name": "Prelum",
-	"patterns": [
-        {
-            "include": "#listing"
+  "scopeName": "source.prelum",
+  "fileTypes": ["prelum", "pre"],
+  "name": "Prelum",
+  "patterns": [
+    {
+      "include": "#listing"
+    },
+    {
+      "include": "#block_keyword"
+    },
+    {
+      "include": "#block_list_keyword"
+    },
+    {
+      "include": "#title_keyword"
+    },
+    {
+      "include": "#keyword"
+    },
+    {
+      "include": "#symbol_keyword"
+    },
+    {
+      "include": "#link"
+    },
+    {
+      "include": "#text-decorations"
+    },
+    {
+      "include": "#email"
+    },
+    {
+      "include": "#url"
+    }
+  ],
+  "repository": {
+    "block_keyword": {
+      "begin": "^(примечания|реферат|таблица|формула|схема)(\\()([^\\(]*)(\\))",
+      "beginCaptures": {
+        "1": {
+          "name": "entity.name.block.function.prelum"
         },
-        {
-            "include": "#block_keyword"
+        "2": {
+          "name": "support.function.prelum"
         },
-        {
-            "include": "#block_list_keyword"
+        "3": {
+          "name": "support.class.var.prelum"
         },
-        {
-            "include": "#title_keyword"
-        },
-        {
-            "include": "#keyword"
-        },
-        {
-            "include": "#symbol_keyword"
-        },
-        {
-            "include": "#link"
-        },
-        {
-            "include": "#text-decorations"
-        },
-        {
-            "include": "#email"
-        },
-        {
-            "include": "#url"
+        "4": {
+          "name": "support.function.prelum"
         }
-	],
-	"repository": {
-        "block_keyword": {
-            "begin": "^(примечания|реферат|таблица|формула|схема)(\\()([^\\(]*)(\\))",
-            "beginCaptures": {
-                "1": {
-                    "name": "entity.name.block.function.prelum"
-                },
-                "2": {
-                    "name": "support.function.prelum"
-                },
-                "3": {
-                    "name": "support.class.var.prelum"
-                },
-                "4": {
-                    "name": "support.function.prelum"
-                }
-            },
-            "name": "block.prelum",
-            "end": "(^--$)",
-            "endCaptures": {
-                "1": {
-                    "name": "support.function.prelum"
-                }
-            },
-            "patterns": [
-                {
-                    "include": "#block_common"
-                }
-            ]
-        },
-        "block_list_keyword": {
-            "begin": "^(документ|титульный-лист|перечень-(символов|терминов|сокращений)|предметный-указатель|обозначения-и-сокращения|определения)(\\()([^\\(]*)(\\))",
-            "beginCaptures": {
-                "1": {
-                    "name": "entity.name.block.function.prelum"
-                },
-                "3": {
-                    "name": "support.function.prelum"
-                },
-                "4": {
-                    "name": "support.class.var.prelum"
-                },
-                "5": {
-                    "name": "support.function.prelum"
-                }
-            },
-            "name": "block.prelum",
-            "end": "(^--$)",
-            "endCaptures": {
-                "1": {
-                    "name": "support.function.prelum"
-                }
-            },
-            "patterns": [
-                {
-                    "include": "#list_entry"
-                },
-                {
-                    "include": "#block_common"
-                }                
-            ]
-        },
-        "block_common": {
-            "patterns": [
-                {
-                    "include": "#symbol_keyword"
-                },
-                {
-                    "include": "#keyword",
-                    "name": "block.keyword.prelum"
-                },
-                {
-                    "include": "#link"
-                },
-                {
-                    "include": "#text-decorations"
-                },
-                {
-                    "include": "#email"
-                },
-                {
-                    "include": "#url"
-                }
-            ]
-        },
-        "title_keyword": {
-            "match": "^(\\+|\\+\\+|\\=\\+|\\=\\=\\+)((\\()([^\\)]*)(\\))){0,1}\\s+(.*)",
-            "captures": {
-                "1": {
-                    "name": "entity.name.function.prelum"
-                },
-                "3": {
-                    "name": "support.function.prelum"
-                },
-                "4": {
-                    "name": "support.class.var.prelum"
-                },
-                "5": {
-                    "name": "support.function.prelum"
-                },
-                "6": {
-                    "name": "string.quoted.double.prelum"
-                }
-            }
-        },
-        "symbol_keyword": {
-            "match": "^(\\=|\\=\\=|\\-|\\))((\\()([^\\)]*)(\\))){0,1}\\s+",
-            "captures": {
-                "1": {
-                    "name": "entity.name.function.prelum"
-                },
-                "3": {
-                    "name": "support.function.prelum"
-                },
-                "4": {
-                    "name": "support.class.var.prelum"
-                },
-                "5": {
-                    "name": "support.function.prelum"
-                }
-            }
-        },
-        "keyword": {
-            "match": "^([а-яА-Яa-zA-Z\\-\\_\\)\\=\\+]+)(\\()([^\\)\\n]*)(\\))",
-            "captures": {
-                "1": {
-                    "name": "entity.name.function.prelum"
-                },
-                "2": {
-                    "name": "support.function.prelum"
-                },
-                "3": {
-                    "name": "support.class.var.prelum"
-                },
-                "4": {
-                    "name": "support.function.prelum"
-                }
-            },
-            "patterns": [
-                {
-                    "include": "#text-decorations"
-                }
-            ]
-        },
-		"listing": {
-			"begin": "(^листинг)(\\()",
-			"beginCaptures": {
-				"1": {
-					"name": "entity.name.function.prelum"
-				},
-                "2": {
-                    "name": "support.function.prelum"
-                }
-			},
-			"end": "(^--)",
-			"endCaptures": {
-				"1": {
-					"name": "support.function.prelum"
-				}
-			},
-			"patterns": [
-				{
-					"begin": "(javascript|js)(\\))",
-					"beginCaptures": {
-						"1": {
-							"name": "support.class.var.prelum"
-						},
-						"2": {
-							"name": "support.function.prelum"
-						}
-					},
-					"end": "(?=^--)",
-					"patterns": [
-						{
-							"include": "source.js"
-						}
-					]
-				},
-				{
-					"begin": "(html)(\\))",
-					"beginCaptures": {
-                        "1": {
-							"name": "support.class.var.prelum"
-						},
-						"2": {
-							"name": "support.function.prelum"
-						}
-					},
-					"end": "(?=^--)",
-					"patterns": [
-						{
-							"include": "text.html.basic"
-						}
-					]
-				},
-				{
-					"begin": "(shell|bash)(\\))",
-					"beginCaptures": {
-                        "1": {
-							"name": "support.class.var.prelum"
-						},
-						"2": {
-							"name": "support.function.prelum"
-						}
-					},
-					"end": "(?=^--)",
-					"patterns": [
-						{
-							"include": "source.shell"
-						}
-					]
-				},
-				{
-					"match": "([^\\)]*)(\\))",
-                    "captures": {
-                        "1": {
-							"name": "support.class.var.prelum"
-						},
-						"2": {
-							"name": "support.function.prelum"
-						}
-					}
-				}
-			]
-		},
-        "link": {
-            "match": "==(\\S+)==",
-            "name": "entity.name.function.prelum",
-            "captures": {
-                "1": {
-                    "name": "support.class.link.prelum"
-                }
-            }
-        },
-		"list_entry": {
-			"match": "(^.*)\\s-\\s",
-			"captures": {
-				"1": {
-					"name": "constant.text.prelum"
-				}
-			}
-		},
-        "text-decorations": {
-            "patterns": [
-                {
-                    "include": "#text_code"
-                },
-                {
-                    "include": "#text_italic"
-                },
-                {
-                    "include": "#text_bold"
-                },
-                {
-                    "include": "#text_underline"
-                },
-                {
-                    "include": "#text_keys"
-                },
-                {
-                    "include": "#text_menu"
-                }
-            ]
-        },
-        "text_code": {
-            "match": "@[^@]*@",
-            "name": "constant.text.prelum"
-        },
-        "text_italic": {
-            "match": "\\s\\/([^\\/]+)\\/\\s",
-            "name": "markup.italic.prelum"
-        },
-        "text_bold": {
-            "match": "\\*\\b([^\\*]+)\\b\\*",
-            "name": "markup.bold.prelum"
-        },
-        "text_underline": {
-            "match": "(\\-\\b[^\\-]+\\b\\-)(?=\\s)",
-            "captures": {
-				"1": {
-					"name": "markup.underline.constant.prelum"
-				}
-			}
-        },
-        "text_keys": {
-            "match": "(\\=\\b[^\\=]+\\b\\=)(?=\\s)",
-            "name": "markup.constant.keys.prelum"
-        },
-        "text_menu": {
-            "match": "(\\+\\b.+\\+)(?=\\s)",
-            "name": "markup.constant.menu.prelum"
-        },
-        "url": {
-            "match": "((([A-Za-z]{3,9}:(?:\\/\\/)?)(?:[\\-;:&=\\+\\$,\\w]+@)?[A-Za-z0-9\\.\\-]+|(?:www\\.|[\\-;:&=\\+\\$,\\w]+@)[A-Za-z0-9\\.\\-]+)((?:\\/[\\+~%\\/\\.\\w\\-_]*)?\\??(?:[\\-\\+=&;%@\\.\\w_]*)#?(?:[\\.\\!\\/\\\\\\w]*))?)",
-            "name": "markup.underline.link.prelum"
-        },
-        "email": {
-            "match": "\\b([a-z0-9_-]+\\.)*[a-z0-9_-]+@[a-z0-9_-]+(\\.[a-z0-9_-]+)*\\.[a-z]{2,6}\\b",
-            "name": "markup.underline.link.prelum"
+      },
+      "name": "block.prelum",
+      "end": "(^--$)",
+      "endCaptures": {
+        "1": {
+          "name": "support.function.prelum"
         }
-	}
+      },
+      "patterns": [
+        {
+          "include": "#block_common"
+        }
+      ]
+    },
+    "block_list_keyword": {
+      "begin": "^(документ|титульный-лист|перечень-(символов|терминов|сокращений)|предметный-указатель|обозначения-и-сокращения|определения)(\\()([^\\(]*)(\\))",
+      "beginCaptures": {
+        "1": {
+          "name": "entity.name.block.function.prelum"
+        },
+        "3": {
+          "name": "support.function.prelum"
+        },
+        "4": {
+          "name": "support.class.var.prelum"
+        },
+        "5": {
+          "name": "support.function.prelum"
+        }
+      },
+      "name": "block.prelum",
+      "end": "(^--$)",
+      "endCaptures": {
+        "1": {
+          "name": "support.function.prelum"
+        }
+      },
+      "patterns": [
+        {
+          "include": "#list_entry"
+        },
+        {
+          "include": "#block_common"
+        }
+      ]
+    },
+    "block_common": {
+      "patterns": [
+        {
+          "include": "#symbol_keyword"
+        },
+        {
+          "include": "#keyword",
+          "name": "block.keyword.prelum"
+        },
+        {
+          "include": "#link"
+        },
+        {
+          "include": "#text-decorations"
+        },
+        {
+          "include": "#email"
+        },
+        {
+          "include": "#url"
+        }
+      ]
+    },
+    "title_keyword": {
+      "match": "^(\\+|\\+\\+|\\=\\+|\\=\\=\\+)((\\()([^\\)]*)(\\))){0,1}\\s+(.*)",
+      "captures": {
+        "1": {
+          "name": "entity.name.function.prelum"
+        },
+        "3": {
+          "name": "support.function.prelum"
+        },
+        "4": {
+          "name": "support.class.var.prelum"
+        },
+        "5": {
+          "name": "support.function.prelum"
+        },
+        "6": {
+          "name": "string.quoted.double.prelum"
+        }
+      }
+    },
+    "symbol_keyword": {
+      "match": "^(\\=|\\=\\=|\\-|\\)|\\)\\)|)((\\()([^\\)]*)(\\))){0,1}\\s+",
+      "captures": {
+        "1": {
+          "name": "entity.name.function.prelum"
+        },
+        "3": {
+          "name": "support.function.prelum"
+        },
+        "4": {
+          "name": "support.class.var.prelum"
+        },
+        "5": {
+          "name": "support.function.prelum"
+        }
+      }
+    },
+    "keyword": {
+      "match": "^([а-яА-Яa-zA-Z\\-\\_\\)\\=\\+]+)(\\()([^\\)\\n]*)(\\))",
+      "captures": {
+        "1": {
+          "name": "entity.name.function.prelum"
+        },
+        "2": {
+          "name": "support.function.prelum"
+        },
+        "3": {
+          "name": "support.class.var.prelum"
+        },
+        "4": {
+          "name": "support.function.prelum"
+        }
+      },
+      "patterns": [
+        {
+          "include": "#text-decorations"
+        }
+      ]
+    },
+    "listing": {
+      "begin": "(^листинг)(\\()",
+      "beginCaptures": {
+        "1": {
+          "name": "entity.name.function.prelum"
+        },
+        "2": {
+          "name": "support.function.prelum"
+        }
+      },
+      "end": "(^--)",
+      "endCaptures": {
+        "1": {
+          "name": "support.function.prelum"
+        }
+      },
+      "patterns": [
+        {
+          "begin": "(javascript|js)(\\))",
+          "beginCaptures": {
+            "1": {
+              "name": "support.class.var.prelum"
+            },
+            "2": {
+              "name": "support.function.prelum"
+            }
+          },
+          "end": "(?=^--)",
+          "patterns": [
+            {
+              "include": "source.js"
+            }
+          ]
+        },
+        {
+          "begin": "(html)(\\))",
+          "beginCaptures": {
+            "1": {
+              "name": "support.class.var.prelum"
+            },
+            "2": {
+              "name": "support.function.prelum"
+            }
+          },
+          "end": "(?=^--)",
+          "patterns": [
+            {
+              "include": "text.html.basic"
+            }
+          ]
+        },
+        {
+          "begin": "(shell|bash)(\\))",
+          "beginCaptures": {
+            "1": {
+              "name": "support.class.var.prelum"
+            },
+            "2": {
+              "name": "support.function.prelum"
+            }
+          },
+          "end": "(?=^--)",
+          "patterns": [
+            {
+              "include": "source.shell"
+            }
+          ]
+        },
+        {
+          "match": "([^\\)]*)(\\))",
+          "captures": {
+            "1": {
+              "name": "support.class.var.prelum"
+            },
+            "2": {
+              "name": "support.function.prelum"
+            }
+          }
+        }
+      ]
+    },
+    "link": {
+      "match": "==(\\S+)==",
+      "name": "entity.name.function.prelum",
+      "captures": {
+        "1": {
+          "name": "support.class.link.prelum"
+        }
+      }
+    },
+    "list_entry": {
+      "match": "(^.*)\\s-\\s",
+      "captures": {
+        "1": {
+          "name": "constant.text.prelum"
+        }
+      }
+    },
+    "text-decorations": {
+      "patterns": [
+        {
+          "include": "#text_code"
+        },
+        {
+          "include": "#text_italic"
+        },
+        {
+          "include": "#text_bold"
+        },
+        {
+          "include": "#text_underline"
+        },
+        {
+          "include": "#text_keys"
+        },
+        {
+          "include": "#text_menu"
+        }
+      ]
+    },
+    "text_code": {
+      "match": "@[^@]*@",
+      "name": "constant.text.prelum"
+    },
+    "text_italic": {
+      "match": "\\s\\/([^\\/]+)\\/\\s",
+      "name": "markup.italic.prelum"
+    },
+    "text_bold": {
+      "match": "\\*\\b([^\\*]+)\\b\\*",
+      "name": "markup.bold.prelum"
+    },
+    "text_underline": {
+      "match": "(\\-\\b[^\\-]+\\b\\-)(?=\\s)",
+      "captures": {
+        "1": {
+          "name": "markup.underline.constant.prelum"
+        }
+      }
+    },
+    "text_keys": {
+      "match": "(\\=\\b[^\\=]+\\b\\=)(?=\\s)",
+      "name": "markup.constant.keys.prelum"
+    },
+    "text_menu": {
+      "match": "(\\+\\b.+\\+)(?=\\s)",
+      "name": "markup.constant.menu.prelum"
+    },
+    "url": {
+      "match": "((([A-Za-z]{3,9}:(?:\\/\\/)?)(?:[\\-;:&=\\+\\$,\\w]+@)?[A-Za-z0-9\\.\\-]+|(?:www\\.|[\\-;:&=\\+\\$,\\w]+@)[A-Za-z0-9\\.\\-]+)((?:\\/[\\+~%\\/\\.\\w\\-_]*)?\\??(?:[\\-\\+=&;%@\\.\\w_]*)#?(?:[\\.\\!\\/\\\\\\w]*))?)",
+      "name": "markup.underline.link.prelum"
+    },
+    "email": {
+      "match": "\\b([a-z0-9_-]+\\.)*[a-z0-9_-]+@[a-z0-9_-]+(\\.[a-z0-9_-]+)*\\.[a-z]{2,6}\\b",
+      "name": "markup.underline.link.prelum"
+    }
+  }
 }
