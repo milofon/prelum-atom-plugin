@@ -1,50 +1,31 @@
-@import "ui-variables";
-@import "./functions";
+@import 'ui-variables';
 
-.font ('gost-3489-33-72', 'gost-3489-33-72.woff');
-.font ('gost-3489-33-72-b', 'gost-3489-33-72-b.woff');
-.font ('gost-3489-33-72-bi', 'gost-3489-33-72-bi.woff');
-.font ('gost-3489-33-72-i', 'gost-3489-33-72-i.woff');
-.font ('gost-3489-2-71', 'gost-3489-2-71.woff');
-.font ('gost-3489-2-71-b', 'gost-3489-2-71-b.woff');
-.font ('gost-3489-7-71', bold, normal, 'gost-3489-7-71-b.woff');
-.font ('gost-3489-7-71', normal, italic, 'gost-3489-7-71-i.woff');
-.font ('PTMono', 'PTM55FT.ttf');
+#prelum-html-view {
+  overflow: auto;
+}
 
 .prelum {
-    .syntax--parameter {
-        color: @syntax-color-snippet;
-    }
-}
-
-.is-hidden {
-    display: none;
-}
-
-.prelum-list {
-    position: absolute;
-    bottom: 40px;
+  .syntax--parameter {
+    color: @syntax-color-snippet;
+  }
 }
 
 atom-text-editor.editor {
-
-    .syntax--prelum {
-
-        &.syntax--parameter {
-            color: @syntax-color-snippet;
-        }
-
-        &.syntax--name.syntax--function {
-            color: @syntax-color-variable;
-        }
-
-        &.syntax--constant.syntax--character {
-            color: @text-color-info;
-        }
-
-        &.syntax--constant.syntax--language {
-            color: @syntax-color-class;
-        }
+  .syntax--prelum {
+    &.syntax--parameter {
+      color: @syntax-color-snippet;
     }
 
+    &.syntax--name.syntax--function {
+      color: @syntax-color-variable;
+    }
+
+    &.syntax--constant.syntax--character {
+      color: @text-color-info;
+    }
+
+    &.syntax--constant.syntax--language {
+      color: @syntax-color-class;
+    }
+  }
 }
