@@ -56,7 +56,7 @@
   "stylesUrl": {
     "title": "Адрес источника стилей документов",
     "type": "string",
-    "default": "https://prelum.ru/styles/",
-    "order": 45
+    "default": "http://materia.prelum.ru/styles",
+    "order": 50
   }
 }
