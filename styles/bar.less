@@ -1,125 +1,125 @@
-@import "ui-variables";
+@import 'ui-variables';
 
 .prelum-bar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+
+  &__left,
+  &__right {
     display: flex;
+    align-items: center;
+    height: 100%;
+    padding: 4px 8px;
     flex-wrap: wrap;
+  }
+
+  &__right {
+    flex-grow: 1;
+    justify-content: flex-end;
+    padding-right: 16px;
+    overflow: hidden;
+  }
+
+  &__translate {
+    font-weight: 500;
+    font-size: 12px;
+    flex-shrink: 0;
+  }
+
+  &__auto {
+    margin-right: 10px;
+
+    input {
+      margin-right: 0 !important;
+      cursor: pointer;
+    }
+  }
+
+  &__formats {
+    flex-shrink: 0;
+    margin-right: 10px;
+  }
+
+  &__spec-list {
+    z-index: 5;
+    padding: 2px;
+
+    li {
+      cursor: pointer;
+    }
+
+    input {
+      font-size: 1.2em;
+    }
+  }
+
+  &__overlay {
+    z-index: 3;
+    position: fixed !important;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__logo {
+    text-transform: uppercase;
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    color: #111;
+    transition: all 1s;
+    text-shadow: 1px 1px 1px @background-color-highlight;
+    font-weight: bold;
+    flex-shrink: 0;
+    cursor: default;
+
+    &:hover {
+      color: @background-color-info;
+    }
+  }
+
+  &__loader {
+    margin-right: 8px;
+  }
+
+  &__status {
+    height: 40px;
+    width: 100%;
+    // position: absolute;
+    // top: -40px;
+    background: @tool-panel-background-color;
+    border-top: 1px solid @base-border-color;
+    border-bottom: 1px solid @base-border-color;
+    display: flex;
     align-items: center;
 
-    &__left, &__right {
-        display: flex;
-        align-items: center;
-        height: 100%;
-        padding: 4px 8px;
-        flex-wrap: wrap;
+    &-title {
+      flex-grow: 1;
+      padding: 8px;
     }
 
-    &__right {
-        flex-grow: 1;
-        justify-content: flex-end;
-        padding-right: 16px;
-        overflow: hidden;
+    &-right {
+      flex-shrink: 0;
+      margin-right: 16px;
+      min-width: 30px;
     }
 
-    &__translate {
-        font-weight: 500;
-        font-size: 12px;
-        flex-shrink: 0;
+    &-close {
+      border: 0 !important;
+      background: transparent !important;
     }
 
-    &__auto {
-        margin-right: 10px;
-
-        input {
-            margin-right: 0 !important;
-            cursor: pointer;
-        }
+    &-loader {
+      margin: auto;
     }
+  }
 
-    &__formats {
-        flex-shrink: 0;
-        margin-right: 10px;
-    }
-
-    &__spec-list {
-
-        z-index: 5;
-        padding: 2px;
-
-        li {
-            cursor: pointer;
-        }
-
-        input {
-            font-size: 1.2em;
-        }
-    }
-
-    &__overlay {
-        z-index: 3;
-        position: fixed !important;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    &__logo {
-        text-transform: uppercase;
-        font-size: 1.4em;
-        letter-spacing: 1px;
-        color: #111;
-        transition: all 1s;
-        text-shadow: 1px 1px 1px @background-color-highlight;
-        font-weight: bold;
-        flex-shrink: 0;
-        cursor: default;
-
-        &:hover {
-            color: @background-color-info;
-        }
-    }
-
-    &__loader {
-        margin-right: 8px;
-    }
-
-    &__status {
-        height: 40px;
-        width: 100%;
-        // position: absolute;
-        // top: -40px;
-        background: @tool-panel-background-color;
-        border-top: 1px solid @base-border-color;
-        border-bottom: 1px solid @base-border-color;
-        display: flex;
-        align-items: center;
-
-        &-title {
-            flex-grow: 1;
-            padding: 8px;
-        }
-
-        &-right {
-            flex-shrink: 0;
-            margin-right: 16px;
-            min-width: 30px;
-        }
-
-        &-close {
-            border: 0 !important;
-            background: transparent !important;
-        }
-
-        &-loader {
-            margin: auto;
-        }
-    }
-
-    button {
-        cursor: pointer;
-        text-transform: uppercase;
-        outline: none !important;
-        box-shadow: none !important;
-        border-color: @button-border-color !important;
-    }
+  button {
+    cursor: pointer;
+    text-transform: uppercase;
+    outline: none !important;
+    box-shadow: none !important;
+    border-color: @button-border-color !important;
+  }
 }
