@@ -53,6 +53,12 @@
     "default": "http://pub.prelum.ru",
     "order": 45
   },
+  "termsUrl": {
+    "title": "Адрес сервиса терминологии",
+    "type": "string",
+    "default": "http://localhost:3089",
+    "order": 45
+  },
   "stylesUrl": {
     "title": "Адрес источника стилей документов",
     "type": "string",

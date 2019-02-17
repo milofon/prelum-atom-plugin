@@ -7,6 +7,9 @@
       "include": "#listing"
     },
     {
+      "include": "#terminus"
+    },
+    {
       "include": "#block_keyword"
     },
     {
@@ -64,8 +67,40 @@
         }
       ]
     },
+    "terminus": {
+      "begin": "^(термины-и-определения|перечень-терминов)(\\()([^\\(]*)(\\))",
+      "beginCaptures": {
+        "1": {
+          "name": "entity.name.block.function.prelum"
+        },
+        "2": {
+          "name": "support.function.prelum"
+        },
+        "3": {
+          "name": "support.class.var.prelum"
+        },
+        "4": {
+          "name": "support.function.prelum"
+        }
+      },
+      "name": "terminus.block.prelum",
+      "end": "(^--$)",
+      "endCaptures": {
+        "1": {
+          "name": "support.function.prelum"
+        }
+      },
+      "patterns": [
+        {
+          "include": "#list_entry"
+        },
+        {
+          "include": "#block_common"
+        }
+      ]
+    },
     "block_list_keyword": {
-      "begin": "^(документ|библиография|наименование|титульный-лист|библиографические-данные|термины-и-определения|нормативные-ссылки|перечень-(символов|терминов|сокращений)|предметный-указатель|обозначения-и-сокращения|определения)(\\()([^\\(]*)(\\))",
+      "begin": "^(документ|библиография|наименование|титульный-лист|библиографические-данные|нормативные-ссылки|перечень-(символов|сокращений)|предметный-указатель|обозначения-и-сокращения|определения)(\\()([^\\(]*)(\\))",
       "beginCaptures": {
         "1": {
           "name": "entity.name.block.function.prelum"
