@@ -1,23 +1,28 @@
 {
-  "host": {
+  "translateUri": {
     "title": "Адрес",
     "type": "string",
-    "default": "prelum.ru",
+    "default": "https://prelum.ru:1961/translate",
     "description": "Адрес транслятора Prelum",
     "order": 10
   },
-  "port": {
-    "title": "Порт",
+  "publicatorUrl": {
+    "title": "Адрес публикатора",
     "type": "string",
-    "default": "1961",
-    "description": "Порт подключения к транслятору Prelum",
+    "default": "http://pub.prelum.ru",
     "order": 20
   },
-  "useSsl": {
-    "title": "Использовать защищенное соединение",
-    "type": "boolean",
-    "default": true,
-    "order": 30
+  "termsUrl": {
+    "title": "Адрес сервиса терминологии",
+    "type": "string",
+    "default": "http://localhost:3089",
+    "order": 22
+  },
+  "stylesUrl": {
+    "title": "Адрес источника стилей документов",
+    "type": "string",
+    "default": "http://materia.prelum.ru/styles",
+    "order": 26
   },
   "format": {
     "title": "Формат выходного файла",
@@ -28,7 +33,7 @@
     "order": 40
   },
   "autoTranslate": {
-    "title": "Автоматические транслировать документ при сохранении",
+    "title": "Автоматически транслировать документ при сохранении",
     "type": "boolean",
     "default": true,
     "order": 50
@@ -39,30 +44,5 @@
     "default": "img",
     "description": "При использовании изображений в документах prelum, транслятору будут переданы файлы из данного каталога. Путь к каталогу указывается относительно директории расположения файла prelum.",
     "order": 60
-  },
-  "showHtmlMargin": {
-    "title": "Отображать отступы документа на панели просмотра HTML",
-    "type": "boolean",
-    "default": true,
-    "description": "Отображение отступов 2см слева и 1см справа. Изменения вступят в силу после очередной трансляции.",
-    "order": 80
-  },
-  "publicatorUrl": {
-    "title": "Адрес публикатора",
-    "type": "string",
-    "default": "http://pub.prelum.ru",
-    "order": 45
-  },
-  "termsUrl": {
-    "title": "Адрес сервиса терминологии",
-    "type": "string",
-    "default": "http://localhost:3089",
-    "order": 45
-  },
-  "stylesUrl": {
-    "title": "Адрес источника стилей документов",
-    "type": "string",
-    "default": "http://materia.prelum.ru/styles",
-    "order": 50
   }
 }

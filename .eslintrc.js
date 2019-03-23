@@ -2,24 +2,25 @@ module.exports = {
   root: true,
   parserOptions: {
     ecmaVersion: 8,
-    sourceType: 'module',
+    sourceType: "module",
     ecmaFeatures: {
       jsx: true,
-      modules: true,
-    },
+      modules: true
+    }
   },
-  extends: ['eslint:recommended', 'prettier', 'prettier/standard'],
+  extends: ["eslint:recommended"],
   rules: {
-    'no-debugger': 'warn',
-    'no-console': 'warn',
-    'no-useless-escape': 0,
+    "no-debugger": "warn",
+    "no-console": "warn",
+    "no-useless-escape": 0,
+    quotes: ["error", "single"]
   },
   globals: {
-    atom: true,
+    atom: true
   },
   env: {
     es6: true,
     node: true,
-    browser: true,
-  },
+    browser: true
+  }
 };

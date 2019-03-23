@@ -1,9 +1,16 @@
-@import 'ui-variables';
+@import "ui-variables";
 
 .prelum-bar {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  flex-shrink: 0;
+  border-top: 1px solid @base-border-color;
+  font-family: system-ui;
+
+  &__left {
+    flex-grow: 1;
+  }
 
   &__left,
   &__right {
@@ -15,10 +22,7 @@
   }
 
   &__right {
-    flex-grow: 1;
-    justify-content: flex-end;
     padding-right: 16px;
-    overflow: hidden;
   }
 
   &__translate {
@@ -28,12 +32,9 @@
   }
 
   &__auto {
-    margin-right: 10px;
-
-    input {
-      margin-right: 0 !important;
-      cursor: pointer;
-    }
+    margin: 0 16px !important;
+    cursor: pointer;
+    display: block;
   }
 
   &__formats {
@@ -64,19 +65,14 @@
   }
 
   &__logo {
-    text-transform: uppercase;
-    font-size: 1.4em;
-    letter-spacing: 1px;
-    color: #111;
-    transition: all 1s;
-    text-shadow: 1px 1px 1px @background-color-highlight;
+    font-size: 16px;
+    margin-left: 8px;
+    margin-right: 28px;
+    color: @background-color-info;
     font-weight: bold;
+    letter-spacing: 1px;
     flex-shrink: 0;
     cursor: default;
-
-    &:hover {
-      color: @background-color-info;
-    }
   }
 
   &__loader {
@@ -117,9 +113,6 @@
 
   button {
     cursor: pointer;
-    text-transform: uppercase;
-    outline: none !important;
     box-shadow: none !important;
-    border-color: @button-border-color !important;
   }
 }

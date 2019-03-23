@@ -1,4 +1,5 @@
 {
   "editor.formatOnSave": true,
-  "tslint.enable": false
+  "tslint.enable": false,
+  "prettier.disableLanguages": ["js", "javascript"]
 }
