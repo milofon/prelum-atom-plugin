@@ -1,9 +1,6 @@
 {
   "scopeName": "source.prelum",
-  "fileTypes": [
-    "prelum",
-    "pre"
-  ],
+  "fileTypes": ["prelum", "pre"],
   "name": "Prelum",
   "patterns": [
     {
@@ -177,6 +174,10 @@
         }
       }
     },
+    "text_italic": {
+      "match": "[^\\/]\\/([^\\/]+)\\/\\s",
+      "name": "markup.italic.prelum"
+    },
     "symbol_keyword": {
       "match": "^(\\=|\\=\\=|\\-|\\)|\\)\\)|)((\\()([^\\)]*)(\\))){0,1}\\s+",
       "captures": {
@@ -340,10 +341,6 @@
       "match": "@[^@]*@",
       "name": "constant.text.prelum"
     },
-    "text_italic": {
-      "match": "\\s\\/([^\\/]+)\\/\\s",
-      "name": "markup.italic.prelum"
-    },
     "text_bold": {
       "match": "\\*\\b([^\\*]+)\\b\\*",
       "name": "markup.bold.prelum"
@@ -365,7 +362,7 @@
       "name": "markup.constant.menu.prelum"
     },
     "url": {
-      "match": "((([A-Za-z]{3,9}:(?:\\/\\/)?)(?:[\\-;:&=\\+\\$,\\w]+@)?[A-Za-z0-9\\.\\-]+|(?:www\\.|[\\-;:&=\\+\\$,\\w]+@)[A-Za-z0-9\\.\\-]+)((?:\\/[\\+~%\\/\\.\\w\\-_]*)?\\??(?:[\\-\\+=&;%@\\.\\w_]*)#?(?:[\\.\\!\\/\\\\\\w]*))?)",
+      "match": "((([A-Za-z]{3,9}:(?:\\/\\/)?)(?:[\\-;:&=\\+\\$,\\w]+@)?[A-Za-z0-9\\.\\-]+|(?:www\\.|[\\-;:&=\\+\\$,\\w]+@)[A-Za-z0-9\\.\\-]+)((?:\\/[\\+~%\\/\\.\\w\\-_]*)?\\??(?:[\\-\\+=&;:%@\\.\\w_]*)#?(?:[\\.\\!\\/\\\\\\w]*))?)",
       "name": "markup.underline.link.prelum"
     },
     "email": {
