@@ -1,6 +1,9 @@
 {
   "scopeName": "source.prelum",
-  "fileTypes": ["prelum", "pre"],
+  "fileTypes": [
+    "prelum",
+    "pre"
+  ],
   "name": "Prelum",
   "patterns": [
     {
@@ -39,7 +42,7 @@
   ],
   "repository": {
     "block_keyword": {
-      "begin": "^(примечания|реферат|таблица|формула|схема|примеры)(\\()([^\\(]*)(\\))",
+      "begin": "^(примечания|реферат|заметка|таблица|формула|схема|примеры)(\\()([^\\(]*)(\\))",
       "beginCaptures": {
         "1": {
           "name": "entity.name.block.function.prelum"
