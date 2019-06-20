@@ -311,9 +311,9 @@
       }
     },
     "list_entry": {
-      "match": "^(.(?!\\s-\\s))+.",
+      "match": "^((=|-|\\w)(.(?!\\s-\\s))*.)\\s-\\s",
       "captures": {
-        "0": {
+        "1": {
           "name": "constant.text.prelum"
         }
       }
