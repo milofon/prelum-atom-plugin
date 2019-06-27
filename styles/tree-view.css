@@ -3,6 +3,10 @@
   display: flex;
 }
 
+.tree-leaf-number {
+  flex-shrink: 0;
+}
+
 .tree-leaf-number + .tree-leaf-body {
   padding-left: .8rem;
 }
