@@ -13,6 +13,9 @@
       "include": "#terminus"
     },
     {
+      "include": "#bibliography"
+    },
+    {
       "include": "#block_keyword"
     },
     {
@@ -87,6 +90,38 @@
         }
       },
       "name": "terminus.block.prelum",
+      "end": "(^--$)",
+      "endCaptures": {
+        "1": {
+          "name": "support.function.prelum"
+        }
+      },
+      "patterns": [
+        {
+          "include": "#list_entry"
+        },
+        {
+          "include": "#block_common"
+        }
+      ]
+    },
+    "bibliography": {
+      "begin": "^(библиографические-данные)(\\()([^\\(]*)(\\))",
+      "beginCaptures": {
+        "1": {
+          "name": "entity.name.block.function.prelum"
+        },
+        "2": {
+          "name": "support.function.prelum"
+        },
+        "3": {
+          "name": "support.class.var.prelum"
+        },
+        "4": {
+          "name": "support.function.prelum"
+        }
+      },
+      "name": "bibliography.block.prelum",
       "end": "(^--$)",
       "endCaptures": {
         "1": {
