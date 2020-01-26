@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "atom-package-dependencies": "latest",
-    "axios": "^0.18.0",
+    "axios": "^0.18.1",
     "jquery": "latest",
     "jsdom": "^13.0.0",
     "mathjax": "2.7.2",
