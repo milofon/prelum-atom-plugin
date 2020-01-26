@@ -1,7 +1,7 @@
 {
   "name": "prelum",
   "main": "./lib/prelum",
-  "version": "0.3.34",
+  "version": "0.3.35",
   "description": "Клиент для трансляции документов Prelum (временная безвозмездная beta-версия)",
   "keywords": [
     "prelum"
