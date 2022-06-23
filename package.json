@@ -15,7 +15,7 @@
     "atom-package-dependencies": "latest",
     "axios": "^0.18.0",
     "jquery": "latest",
-    "jsdom": "^13.0.0",
+    "jsdom": "^16.5.0",
     "mathjax": "2.7.2",
     "mathjax-electron": "^3.0.0",
     "mathjax-node": "2.0.0",
